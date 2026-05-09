@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人导航页</title>
     <style>
-        a.简历 {
-            display:inline-block ;
-            margin-top: 10px;
-            padding: 10px;
-            color: red;
-            
-            text-decoration: underline;
-            border: 1px solid black;
-        }*{
+        *{
             font-family: "kaiti";}
-            p{display: inline-block;
-                background-color: aquamarine;
+        div{  color: aqua;
+                text-align: center;
             }
-            h1{
-                color: aqua;
+            a:hover{
+                color: red;
             }
+            .导航{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                text-decoration: none;
+                font-size: large;
+            }
+                .导航> a{
+                    text-decoration: none;
+                    border: 1px solid black;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
            </style>
+
 </head>
-<body>
-    
-    <div    ><h1>个人简介</h1>
-        <p>头像：</p>
-        <img src="1.jpg" width="150" height="100" alt=""></div>
-     <p>我是xxx，今年xx岁，来自xxx。</p>   
-   <br>
-    <a class="简历" href="demo.html" target="_top">简历</a>
+<body style="height:1000px;">
+     <h1 style="text-align:center;">个人简介</h1>
+        
+    <div class="导航">   <a class="简历" href="demo.html" target="_top">简历</a>
+    <a class="关于我" href="about.html" target="_top">关于我</a>
+        <a class="作品集" href="works.html" target="_top">作品集</a>  
+ </div>
+   
 </body>
 </html>
