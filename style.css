@@ -1,18 +1,41 @@
-<style>
-        a.简历 {
-            display:inline-block ;
-            margin-top: 10px;
-            padding: 10px;
-            color: red;
-            
-            text-decoration: underline;
-            border: 1px solid black;
-        }*{
+ <style>
+        *{
             font-family: "kaiti";}
-            p{display: inline-block;
-                background-color: aquamarine;
+        div{  color: aqua;
+                text-align: center;
             }
-            h1{
-                color: aqua;
+            a:hover{
+                color: red;
             }
+            .导航{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                text-decoration: none;
+                font-size: large;
+            }
+                .导航> a{
+                    text-decoration: none;
+                    border: 1px solid black;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+                .个人{
+                    left: 0;
+                    position: fixed;
+                    top: 50px;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    width: auto;
+                    z-index: -1;
+                }
+                .联系方式{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 5px;
+                }
+
+               
            </style>
